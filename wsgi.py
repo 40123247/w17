@@ -91,7 +91,7 @@ class Hello(object):
         cherrypy.session['count'] = thecount
         # 印出讓使用者輸入的超文件表單
         outstring = '''
-    40123248
+    40123234
     <br/>
     <a href="drawspur">drawspur</a>
     <br/>
@@ -733,15 +733,15 @@ class Hello(object):
             # 下列為齒頂圓上用來近似圓弧的直線
             create_line(lfx,lfy,rfx,rfy,fill=顏色)
     ctx.save()
-    ctx.translate(400, 400)
-    ctx.rotate(pi)
-    gear(0, 0,''' + str(total) + ',' + str(b) +  ''',"blue")
-    ctx.restore()
-    ctx.save()
-    ctx.translate(400 ,400+ ''' + str(2*total) + ''')
-    ctx.rotate(-(pi*2) -pi/ '''  + str(b) + ''')
-    gear(0, 0,''' + str(total) + ',' + str(b) +  ''',"yellow")
-    ctx.restore()
+     ctx.translate(400+ ''' + str(2*total) + ''', 200+ ''' + str(2*total) + ''')
+     ctx.rotate(-(pi) -pi/ '''  + str(b) + ''')
+     gear(0, 0,''' + str(total) + ',' + str(b) +  ''',"purple")
+     ctx.restore()
+     ctx.save()
+     ctx.translate(400+ ''' + str(2*total) + ''' ,200+ ''' + str(4*total) + ''')
+     ctx.rotate(pi*2)
+     gear(0, 0,''' + str(total) + ',' + str(b) +  ''',"green")
+         ctx.restore()
         </script>
         <canvas id="plotarea" width="800" height="600"></canvas>
         </body>
