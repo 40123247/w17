@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Introduction
 
@@ -150,3 +151,6 @@ week 7
 =======
 # 2015cd_midterm2
 
+=======
+# w17
+>>>>>>> 357c332ffa9d030733bdf88da8bed4b1eb92bc7e
